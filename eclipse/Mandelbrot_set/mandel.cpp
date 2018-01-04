@@ -9,11 +9,6 @@
 #include "save_image.h"
 #include "utils.h"
 
-#include "tbb/tbb.h"
-#include "tbb/pipeline.h"
-
-// clang++ -std=c++11 -stdlib=libc++ -O3 save_image.cpp utils.cpp mandel.cpp -lfreeimage
-
 // Use an alias to simplify the use of complex type
 using Complex = std::complex<double>;
 
@@ -37,21 +32,6 @@ int escape(Complex c, int iter_max, const std::function<Complex( Complex, Comple
 
 	return iter;
 }
-
-// Loop over each pixel from our image and check if the points associated with this pixel escape to infinity
-/*
- void get_number_iterations(window<int> &scr, window<double> &fract, int iter_max, std::vector<int> &colors,
-	const std::function<Complex(Complex, Complex)> &func) {
-	int k = 0;
-	int N = scr.width();
-	for(int i = scr.y_min(); i < scr.y_max(); ++i) {
-		for(int j = scr.x_min(); j < scr.x_max(); ++j) {
-			Complex c((double) (j), (double) (i));
-			c = scale(scr, fract, c);
-			colors[N * i + j] = escape(c, iter_max, func);
-		}
-	}
-}*/
 
 void get_number_iterations(window<int> &scr, window<double> &fract, int iter_max, std::vector<int> &colors,
 		const std::function<Complex(Complex, Complex)> &func) {
