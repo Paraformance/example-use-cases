@@ -11,9 +11,8 @@
 #include <fstream>
 #include <sys/time.h>
 
-#include "tbb/tbb.h"
 #include "tbb/pipeline.h"
-using namespace tbb;
+
 int dim, nr_cpu_w, nr_gpu_w;
 const int mask_dim=8;
 

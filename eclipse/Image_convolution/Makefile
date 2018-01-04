@@ -1,7 +1,7 @@
-CXX = g++ 
+CXX = g++
 
 FLAGS = -std=c++11
-SEQ_LFLAGS = -ltbb -lpng16
+SEQ_LFLAGS = -ltbb -lpng16 -fopenmp
 
 PNG_INC = .
 #LIBS = -L/usr/lib64
