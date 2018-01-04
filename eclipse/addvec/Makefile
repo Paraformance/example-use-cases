@@ -1,4 +1,4 @@
-FLAGS=-std=c++1y -ltbb -g
+FLAGS=-std=c++1y -ltbb -g -fopenmp
 all: addvec
 
 clean:
