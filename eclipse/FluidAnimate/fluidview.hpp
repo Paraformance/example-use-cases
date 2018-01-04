@@ -5,7 +5,12 @@
 #ifndef __FLUIDVIEWER_HPP__
 #define __FLUIDVIEWER_HPP__ 1
 
-#include <GL/glut.h>
+#ifdef __APPLE__
+  #include <GLUT/glut.h>
+#else
+  #include <GL/glut.h>
+#endif
+
 #include "fluid.hpp"
 
 //Initialize visualization mode

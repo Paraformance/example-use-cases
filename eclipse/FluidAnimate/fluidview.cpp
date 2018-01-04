@@ -4,7 +4,6 @@
 
 #include <cstdlib>
 #include <iostream>
-#include <GL/glut.h>
 
 #include "fluid.hpp"
 #include "fluidview.hpp"
