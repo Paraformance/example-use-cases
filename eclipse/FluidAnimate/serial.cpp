@@ -471,7 +471,7 @@ void ComputeForces()
   int neighCells[3*3*3];
 
   int cindex = 0;
-  for(int ck = 0; ck < nz; ++ck)
+  for(int ck = 0; ck < nz; ++ck){
     for(int cj = 0; cj < ny; ++cj)
       for(int ci = 0; ci < nx; ++ci, ++cindex)
       {
@@ -479,6 +479,7 @@ void ComputeForces()
         if(np == 0)
           continue;
 
+        int neighCells[3*3*3];
         int numNeighCells = GetNeighborCells(ci, cj, ck, neighCells);
 
         Cell *cell = &cells[cindex];
@@ -515,6 +516,7 @@ void ComputeForces()
           }
         }
       }
+   }
 
   const fptype tc = hSq*hSq*hSq;
   for(int i = 0; i < numCells; ++i)
@@ -533,7 +535,7 @@ void ComputeForces()
   }
 
   cindex = 0;
-  for(int ck = 0; ck < nz; ++ck)
+  for(int ck = 0; ck < nz; ++ck){
     for(int cj = 0; cj < ny; ++cj)
       for(int ci = 0; ci < nx; ++ci, ++cindex)
       {
@@ -541,6 +543,7 @@ void ComputeForces()
         if(np == 0)
           continue;
 
+        int neighCells[3*3*3];
         int numNeighCells = GetNeighborCells(ci, cj, ck, neighCells);
 
         Cell *cell = &cells[cindex];
@@ -571,6 +574,7 @@ void ComputeForces()
                   acc += (neigh->v[iparNeigh % PARTICLES_PER_CELL] - cell->v[ipar % PARTICLES_PER_CELL]) * viscosityCoeff * hmr;
                   acc /= cell->density[ipar % PARTICLES_PER_CELL] * neigh->density[iparNeigh % PARTICLES_PER_CELL];
 
+ 
                   cell->a[ipar % PARTICLES_PER_CELL] += acc;
                   neigh->a[iparNeigh % PARTICLES_PER_CELL] -= acc;
                 }
@@ -587,6 +591,7 @@ void ComputeForces()
           }
         }
       }
+   }
 }
 
 ////////////////////////////////////////////////////////////////////////////////
