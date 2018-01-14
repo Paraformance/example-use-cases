@@ -5,4 +5,4 @@
 2. Visual C++
 
 ### In Visual Studio 2015
-open project.sln
+open example.sln
