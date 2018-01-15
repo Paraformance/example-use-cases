@@ -2,7 +2,7 @@
 This project contains example of use cases where paraformance tool has been used.
 
 ### Requirements
-1. IDE - Eclipse
+1. IDE - Eclipse and/or Visual Studio 2015
 2. Parallel libraries - TBB and/or OpenMP
 
 ### Licensing
