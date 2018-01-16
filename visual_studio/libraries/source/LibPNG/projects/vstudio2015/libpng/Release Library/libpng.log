@@ -1,0 +1,590 @@
+﻿Build started 11/13/2017 4:12:47 PM.
+     1>Project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" on node 2 (Build target(s)).
+     1>Building with tools version "14.0".
+     1>Target "_CheckForInvalidConfigurationAndPlatform" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (entry point):
+       Task "Error" skipped, due to false condition; ( '$(_InvalidConfigurationError)' == 'true' ) was evaluated as ( '' == 'true' ).
+       Task "Warning" skipped, due to false condition; ( '$(_InvalidConfigurationWarning)' == 'true' ) was evaluated as ( '' == 'true' ).
+       Task "Message"
+         Configuration=Release Library
+       Done executing task "Message".
+       Task "Message"
+         Platform=Win32
+       Done executing task "Message".
+       Task "Error" skipped, due to false condition; ('$(OutDir)' != '' and !HasTrailingSlash('$(OutDir)')) was evaluated as ('C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\Release Library\' != '' and !HasTrailingSlash('C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\Release Library\')).
+       Task "Error" skipped, due to false condition; ('$(BaseIntermediateOutputPath)' != '' and !HasTrailingSlash('$(BaseIntermediateOutputPath)')) was evaluated as ('obj\' != '' and !HasTrailingSlash('obj\')).
+       Task "Error" skipped, due to false condition; ('$(IntermediateOutputPath)' != '' and !HasTrailingSlash('$(IntermediateOutputPath)')) was evaluated as ('Release Library\' != '' and !HasTrailingSlash('Release Library\')).
+     1>Done building target "_CheckForInvalidConfigurationAndPlatform" in project "libpng.vcxproj".
+     1>Target "_PrepareForBuild" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.BuildSteps.Targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "Build" depends on it):
+       Task "CreateItem" skipped, due to false condition; ('%(CustomBuild.IncludeFileToTool)'!='') was evaluated as (''!='').
+     1>Done building target "_PrepareForBuild" in project "libpng.vcxproj".
+     1>Target "_PrepareForReferenceResolution" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "ResolveReferences" depends on it):
+       Task "Message" skipped, due to false condition; ('$(_REFERENCE_DEBUG)'=='true') was evaluated as (''=='true').
+     1>Done building target "_PrepareForReferenceResolution" in project "libpng.vcxproj".
+       Target "ComputeCrtSDKReference" skipped, due to false condition; ('@(ClCompile)'!='' and '$(WindowsAppContainer)'=='true' and '$(UseCrtSDKReference)' != 'false') was evaluated as ('..\..\..\png.c;..\..\..\pngerror.c;..\..\..\pngget.c;..\..\..\pngmem.c;..\..\..\pngpread.c;..\..\..\pngread.c;..\..\..\pngrio.c;..\..\..\pngrtran.c;..\..\..\pngrutil.c;..\..\..\pngset.c;..\..\..\pngtrans.c;..\..\..\pngwio.c;..\..\..\pngwrite.c;..\..\..\pngwtran.c;..\..\..\pngwutil.c'!='' and 'false'=='true' and '' != 'false').
+     1>Target "BeforeResolveReferences" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "ResolveReferences" depends on it):
+     1>Done building target "BeforeResolveReferences" in project "libpng.vcxproj".
+     1>Target "AssignProjectConfiguration" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "ResolveReferences" depends on it):
+       Task "AssignProjectConfiguration"
+       Done executing task "AssignProjectConfiguration".
+     1>Done building target "AssignProjectConfiguration" in project "libpng.vcxproj".
+       Target "AssignProjectConfiguration" skipped. Previously built successfully.
+     1>Target "_SplitProjectReferencesByFileExistence" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "ResolveProjectReferences" depends on it):
+       Task "ResolveNonMSBuildProjectOutput" skipped, due to false condition; ('$(BuildingInsideVisualStudio)'=='true' and '@(ProjectReferenceWithConfiguration)'!='') was evaluated as ('true'=='true' and ''!='').
+     1>Done building target "_SplitProjectReferencesByFileExistence" in project "libpng.vcxproj".
+       Target "_RemoveNameMetadataFromProjectReferenceItems" skipped, due to false condition; ('@(ProjectReference)'!='') was evaluated as (''!='').
+     1>Target "ResolveProjectReferences" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "ResolveReferences" depends on it):
+       Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and ('$(BuildingInsideVisualStudio)' == 'true' or '$(BuildProjectReferences)' != 'true') and '$(VisualStudioVersion)' != '10.0' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true' and '' != '' and ('true' == 'true' or 'true' != 'true') and '14.0' != '10.0' and '' != '').
+       Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and ('$(BuildingInsideVisualStudio)' == 'true' or '$(BuildProjectReferences)' != 'true') and '$(VisualStudioVersion)' == '10.0' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true' and '' != '' and ('true' == 'true' or 'true' != 'true') and '14.0' == '10.0' and '' != '').
+       Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '$(BuildingInsideVisualStudio)' != 'true' and '$(BuildProjectReferences)' == 'true' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true' and '' != '' and 'true' != 'true' and 'true' == 'true' and '' != '').
+       Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '$(BuildingProject)' == 'true' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true' and '' != '' and 'true' == 'true' and '' != '').
+       Task "Warning" skipped, due to false condition; ('@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceNonexistent)' != '') was evaluated as ('' != '' and '' != '').
+     1>Done building target "ResolveProjectReferences" in project "libpng.vcxproj".
+       Target "FindInvalidProjectReferences" skipped, due to false condition; ('$(FindInvalidProjectReferences)' == 'true') was evaluated as ('' == 'true').
+       Target "ResolveNativeReferences" skipped, due to false condition; ('@(NativeReference)'!='') was evaluated as (''!='').
+       Target "_PrepareForReferenceResolution" skipped. Previously built successfully.
+     1>Target "GetFrameworkPaths" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.NetFramework.CurrentVersion.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "ResolveAssemblyReferences" depends on it):
+     1>Done building target "GetFrameworkPaths" in project "libpng.vcxproj".
+       Target "GetWinFXPath" skipped, due to false condition; (('@(Page)' != '' or '@(ApplicationDefinition)' != '' or '@(Resource)' != '') and ('$(GetWinFXNativePath)' != '' or '$(GetWinFXWoWPath)' != '' )) was evaluated as (('' != '' or '' != '' or '' != '') and ('' != '' or '' != '' )).
+     1>Target "GetReferenceAssemblyPaths" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "ResolveAssemblyReferences" depends on it):
+       Task "GetReferenceAssemblyPaths" skipped, due to false condition; ('$(TargetFrameworkMoniker)' != '' and ('$(_TargetFrameworkDirectories)' == '' or '$(_FullFrameworkReferenceAssemblyPaths)' == '')) was evaluated as ('' != '' and ('C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0' == '' or 'C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0' == '')).
+     1>Done building target "GetReferenceAssemblyPaths" in project "libpng.vcxproj".
+     1>Target "SetBuildDefaultEnvironmentVariables" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.Cpp.Current.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "PrepareForBuild" depends on it):
+       Using "SetEnv" task from assembly "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.Build.CppTasks.Common.dll".
+       Task "SetEnv"
+         PATH=C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin;C:\Program Files (x86)\Windows Kits\8.1\bin\x86;;C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\tools;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\ide;C:\Program Files (x86)\HTML Help Workshop;;C:\Program Files (x86)\MSBuild\14.0\bin\;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\;C:\WINDOWS\SysWow64;;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\NativeBinaries\x86;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\libnvvp;C:\Perl64\site\bin;C:\Perl64\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\mure\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\nodejs\;C:\Program Files\MATLAB\MATLAB Runtime\v85\runtime\win64;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\Android\android-sdk\platform-tools;C:\Program Files (x86)\Microsoft Emulator Manager\1.0\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\CMake\bin;C:\Program Files\Java\jdk1.8.0_121\bin;C:\Program Files\llvm-releases\4.0.0\bin;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Perforce;D:\Dev\mingw64\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;C:\Program Files (x86)\NVIDIA Corporation\Cg\bin;C:\Program Files (x86)\NVIDIA Corporation\Cg\bin.x64;D:\Program Files\MiKTeX 2.9\miktex\bin\x64\;C:\Program Files (x86)\Pandoc\;C:\Users\mure\Anaconda3;C:\Users\mure\Anaconda3\Library\mingw-w64\bin;C:\Users\mure\Anaconda3\Library\usr\bin;C:\Users\mure\Anaconda3\Library\bin;C:\Users\mure\Anaconda3\Scripts;C:\Users\mure\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\LLVMtes\bin;
+       Done executing task "SetEnv".
+       Task "SetEnv"
+         LIB=C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\lib;;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\lib;;C:\Program Files (x86)\Windows Kits\10\lib\10.0.10240.0\ucrt\x86;;;C:\Program Files (x86)\Windows Kits\8.1\lib\winv6.3\um\x86;;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\Lib\um\x86
+       Done executing task "SetEnv".
+       Task "SetEnv"
+         LIBPATH=C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\lib;;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\lib;
+       Done executing task "SetEnv".
+       Task "SetEnv"
+         INCLUDE=C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include;;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include;;C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt;;;C:\Program Files (x86)\Windows Kits\8.1\Include\um;C:\Program Files (x86)\Windows Kits\8.1\Include\shared;C:\Program Files (x86)\Windows Kits\8.1\Include\winrt;;
+       Done executing task "SetEnv".
+     1>Done building target "SetBuildDefaultEnvironmentVariables" in project "libpng.vcxproj".
+       Target "SetUserMacroEnvironmentVariables" skipped, due to false condition; ('@(BuildMacro)' != '' and '$(DesignTimeBuild)' != 'true') was evaluated as ('' != '' and '' != 'true').
+     1>Target "GetResolvedWinMD" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "PrepareForBuild" depends on it):
+     1>Done building target "GetResolvedWinMD" in project "libpng.vcxproj".
+     1>Target "PlatformPrepareForBuild" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.Cpp.Platform.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "PrepareForBuild" depends on it):
+       Task "VCMessage" skipped, due to false condition; ('$(_Error64bitToolsNotInstalled)' == 'true') was evaluated as ('' == 'true').
+       Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(_ToolsetFound)' != 'true' and '$(PlatformToolset)' == 'v110') was evaluated as (''!='true' and 'true' != 'true' and 'v140' == 'v110').
+       Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(_ToolsetFound)' != 'true' and '$(PlatformToolset)' == 'v100') was evaluated as (''!='true' and 'true' != 'true' and 'v140' == 'v100').
+       Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(_ToolsetFound)' != 'true' and '$(PlatformToolset)' == 'v90') was evaluated as (''!='true' and 'true' != 'true' and 'v140' == 'v90').
+       Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(_ToolsetFound)' != 'true' and '$(PlatformToolset)' != 'v90' and '$(PlatformToolset)' != 'v100' and '$(PlatformToolset)' != 'v110') was evaluated as (''!='true' and 'true' != 'true' and 'v140' != 'v90' and 'v140' != 'v100' and 'v140' != 'v110').
+     1>Done building target "PlatformPrepareForBuild" in project "libpng.vcxproj".
+     1>Target "Desktop_PlatformPrepareForBuild" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Platforms\Win32\PlatformToolsets\v140\Toolset.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "PrepareForBuild" depends on it):
+       Task "VCMessage" skipped, due to false condition; ($(MissingSDKProps) == 'true') was evaluated as ( == 'true').
+     1>Done building target "Desktop_PlatformPrepareForBuild" in project "libpng.vcxproj".
+       Target "GetFrameworkPaths" skipped. Previously built successfully.
+       Target "GetReferenceAssemblyPaths" skipped. Previously built successfully.
+       Target "AssignLinkMetadata" skipped, due to false condition; ( '$(SynthesizeLinkMetadata)' == 'true' ) was evaluated as ( '' == 'true' ).
+     1>Target "SetCABuildNativeEnvironmentVariables" in file "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v14.0\CodeAnalysis\Microsoft.CodeAnalysis.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "PrepareForBuild" depends on it):
+       Initializing task factory "CodeTaskFactory" from assembly "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Build.Tasks.Core.dll".
+       Using "SetEnvironmentVariable" task from the task factory "Code Task Factory".
+       Task "SetEnvironmentVariable"
+       Done executing task "SetEnvironmentVariable".
+     1>Done building target "SetCABuildNativeEnvironmentVariables" in project "libpng.vcxproj".
+     1>Target "PrepareForBuild" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "ResolveAssemblyReferences" depends on it):
+       Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)' != 'true' and '$(ConfigurationPlatformExists)' != 'true') was evaluated as ('' != 'true' and 'true' != 'true').
+       Task "MakeDir"
+       Done executing task "MakeDir".
+       Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(WindowsAppContainer)'=='true' and '$(ConfigurationType)'!='Application' and '$(ConfigurationType)'!='DynamicLibrary' and '$(ConfigurationType)'!='StaticLibrary') was evaluated as (''!='true' and 'false'=='true' and 'StaticLibrary'!='Application' and 'StaticLibrary'!='DynamicLibrary' and 'StaticLibrary'!='StaticLibrary').
+       Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(VCInstallDir)'=='' and '$(UseEnv)' != 'true' and ('$(TargetFrameworkVersion)'=='v3.5' or '$(TargetFrameworkVersion)'=='v3.0' or '$(TargetFrameworkVersion)'=='v2.0' )) was evaluated as (''!='true' and 'C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\'=='' and '' != 'true' and ('v4.0'=='v3.5' or 'v4.0'=='v3.0' or 'v4.0'=='v2.0' )).
+       Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(VCInstallDir)'=='' and '$(UseEnv)' != 'true' and '$(PlatformToolset)'=='v90') was evaluated as (''!='true' and 'C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\'=='' and '' != 'true' and 'v140'=='v90').
+       Task "VCMessage" skipped, due to false condition; ('$(VCInstallDir)'=='' and '$(UseEnv)' != 'true') was evaluated as ('C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\'=='' and '' != 'true').
+       Task "VCMessage" skipped, due to false condition; ('$(WindowsSDKDir)'=='' and '$(UseEnv)' != 'true') was evaluated as ('C:\Program Files (x86)\Windows Kits\8.1\'=='' and '' != 'true').
+       Task "VCMessage" skipped, due to false condition; ('$(IntDirTrailingSlashWarning)'=='true') was evaluated as (''=='true').
+       Task "VCMessage" skipped, due to false condition; ('$(OutDirTrailingSlashWarning)'=='true') was evaluated as (''=='true').
+       Task "VCMessage" skipped, due to false condition; ('%(CompatibilityIssues.Identity)' != '' and '$(DesignTimeBuild)'!='true') was evaluated as ('' != '' and ''!='true').
+       Task "VCMessage" skipped, due to false condition; ('$(_MBCS_Using)' == 'true' and '$(_MBCS_Installed)' != 'true' and '$(DesignTimeBuild)' != 'true') was evaluated as ('' == 'true' and '' != 'true' and '' != 'true').
+       Task "VCMessage" skipped, due to false condition; ('$(IgnoreWarnIntDirSharingDetected)' != 'true' and '$(IntDirSharingDetected)' == 'true') was evaluated as ('' != 'true' and '' == 'true').
+       Task "VCMessage" skipped, due to false condition; ('$(IgnoreWarnIntDirInTempDetected)' != 'true' and ('$(_IntDirFullpath.StartsWith($(Tmp), true, null))' == 'true' or '$(_IntDirFullpath.StartsWith($(Temp), true, null))' == 'true' or '$(_OutDirFullpath.StartsWith($(Tmp), true, null))' == 'true' or '$(_OutDirFullpath.StartsWith($(Temp), true, null))' == 'true')) was evaluated as ('' != 'true' and ('False' == 'true' or 'False' == 'true' or 'False' == 'true' or 'False' == 'true')).
+       Task "MakeDir"
+       Done executing task "MakeDir".
+     1>Done building target "PrepareForBuild" in project "libpng.vcxproj".
+       Target "_PrepareForReferenceResolution" skipped. Previously built successfully.
+       Target "ComputeCrtSDKReference" skipped, due to false condition; ('@(ClCompile)'!='' and '$(WindowsAppContainer)'=='true' and '$(UseCrtSDKReference)' != 'false') was evaluated as ('..\..\..\png.c;..\..\..\pngerror.c;..\..\..\pngget.c;..\..\..\pngmem.c;..\..\..\pngpread.c;..\..\..\pngread.c;..\..\..\pngrio.c;..\..\..\pngrtran.c;..\..\..\pngrutil.c;..\..\..\pngset.c;..\..\..\pngtrans.c;..\..\..\pngwio.c;..\..\..\pngwrite.c;..\..\..\pngwtran.c;..\..\..\pngwutil.c'!='' and 'false'=='true' and '' != 'false').
+     1>Target "GetInstalledSDKLocations" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "ResolveSDKReferences" depends on it):
+       Task "GetInstalledSDKLocations" skipped, due to false condition; ('@(SDKReference)' != '') was evaluated as ('' != '').
+       Task "GetInstalledSDKLocations" skipped, due to false condition; ('@(SDKReference)' != '' and '$(SupportWindows81SDKs)' == 'true' and '$(TargetPlatformIdentifierWindows81)' != '' and '$(TargetPlatformVersionWindows81)' != '') was evaluated as ('' != '' and '' == 'true' and '' != '' and '' != '').
+       Task "GetInstalledSDKLocations" skipped, due to false condition; ('@(SDKReference)' != '' and '$(SupportWindowsPhone81SDKs)' == 'true' and '$(TargetPlatformIdentifierWindowsPhone81)' != '' and '$(TargetPlatformVersionWindowsPhone81)' != '') was evaluated as ('' != '' and '' == 'true' and '' != '' and '' != '').
+     1>Done building target "GetInstalledSDKLocations" in project "libpng.vcxproj".
+     1>Target "ModifyUnitTestPlatformVersion" in file "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportBefore\Windows.8.1.UT_SDKReference.props" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "ResolveSDKReferences" depends on it):
+     1>Done building target "ModifyUnitTestPlatformVersion" in project "libpng.vcxproj".
+     1>Target "ResolveSDKReferences" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "ResolveAssemblyReferences" depends on it):
+       Task "ResolveSDKReference" skipped, due to false condition; ('@(SDKReference)'!='') was evaluated as (''!='').
+     1>Done building target "ResolveSDKReferences" in project "libpng.vcxproj".
+       Target "ResolveSDKReferences" skipped. Previously built successfully.
+     1>Target "ExpandSDKReferences" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "ResolveAssemblyReferences" depends on it):
+       Task "GetSDKReferenceFiles" skipped, due to false condition; ('@(ResolvedSDKReference)'!='') was evaluated as (''!='').
+     1>Done building target "ExpandSDKReferences" in project "libpng.vcxproj".
+       Target "ResolveNuGetPackageAssets" skipped, due to false condition; ('$(ResolveNuGetPackages)' == 'true' and exists('$(ProjectLockFile)')) was evaluated as ('true' == 'true' and exists('project.lock.json')).
+     1>Target "ResolveAssemblyReferences" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "ResolveReferences" depends on it):
+       Task "ResolveAssemblyReference" skipped, due to false condition; ('@(Reference)'!='' or '@(_ResolvedProjectReferencePaths)'!='' or '@(_ExplicitReference)' != '') was evaluated as (''!='' or ''!='' or '' != '').
+     1>Done building target "ResolveAssemblyReferences" in project "libpng.vcxproj".
+       Target "GenerateBindingRedirects" skipped, due to false condition; ('$(AutoGenerateBindingRedirects)' == 'true' and '$(GenerateBindingRedirectsOutputType)' == 'true') was evaluated as ('' == 'true' and '' == 'true').
+       Target "GenerateBindingRedirectsUpdateAppConfig" skipped, due to false condition; ('$(AutoGenerateBindingRedirects)' == 'true' and '$(GenerateBindingRedirectsOutputType)' == 'true' and Exists('$(_GenerateBindingRedirectsIntermediateAppConfig)')) was evaluated as ('' == 'true' and '' == 'true' and Exists('Release Library\libpng.vcxproj.libpng.lib.config')).
+       Target "ResolveComReferences" skipped, due to false condition; ('@(COMReference)'!='' or '@(COMFileReference)'!='') was evaluated as (''!='' or ''!='').
+     1>Target "AfterResolveReferences" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "ResolveReferences" depends on it):
+     1>Done building target "AfterResolveReferences" in project "libpng.vcxproj".
+       Target "ImplicitlyExpandDesignTimeFacades" skipped, due to false condition; ('$(ImplicitlyExpandDesignTimeFacades)' == 'true') was evaluated as ('' == 'true').
+       Target "ResolveTestReferences" skipped, due to false condition; ('@(Shadow)'!='') was evaluated as (''!='').
+     1>Target "ResolveReferences" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "Build" depends on it):
+     1>Done building target "ResolveReferences" in project "libpng.vcxproj".
+       Target "PrepareForBuild" skipped. Previously built successfully.
+       Target "PrepareForBuild" skipped. Previously built successfully.
+     1>Target "InitializeBuildStatus" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "Build" depends on it):
+       Task "ReadLinesFromFile"
+       Done executing task "ReadLinesFromFile".
+       Task "WriteLinesToFile"
+       Done executing task "WriteLinesToFile".
+       Task "Touch"
+         Touching "Release Library\libpng.tlog\unsuccessfulbuild".
+       Done executing task "Touch".
+     1>Done building target "InitializeBuildStatus" in project "libpng.vcxproj".
+       Target "AssignProjectConfiguration" skipped. Previously built successfully.
+       Target "_SplitProjectReferencesByFileExistence" skipped. Previously built successfully.
+     1>Target "BuildGenerateSourcesTraverse" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "BuildGenerateSources" depends on it):
+       Task "MSBuild" skipped, due to false condition; ('$(BuildPassReferences)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceExistent)' != '' and '%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true') was evaluated as ('' == 'true' and '' != '' and '' != '' and '' == 'true').
+     1>Done building target "BuildGenerateSourcesTraverse" in project "libpng.vcxproj".
+       Target "PrepareForBuild" skipped. Previously built successfully.
+       Target "ResolveReferences" skipped. Previously built successfully.
+     1>Target "BeforeBuildGenerateSources" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.BuildSteps.Targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+     1>Done building target "BeforeBuildGenerateSources" in project "libpng.vcxproj".
+     1>Target "PreBuildEvent" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+       Task "Message" skipped, due to false condition; ('%(PreBuildEvent.Message)' != '' and '%(PreBuildEvent.Command)' != '') was evaluated as ('' != '' and '' != '').
+       Task "Exec" skipped, due to false condition; ('%(PreBuildEvent.Command)' != '') was evaluated as ('' != '').
+     1>Done building target "PreBuildEvent" in project "libpng.vcxproj".
+       Target "CustomBuild" skipped, due to false condition; ('@(CustomBuild)' != '') was evaluated as ('' != '').
+       Target "FxExport" skipped, due to false condition; ('@(FxCompile)' != '') was evaluated as ('' != '').
+       Target "FxCompile" skipped, due to false condition; ('@(FxCompile)' != '') was evaluated as ('' != '').
+       Target "Xsd" skipped, due to false condition; ('@(Xsd)' != '') was evaluated as ('' != '').
+     1>Target "_Xsd" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+     1>Done building target "_Xsd" in project "libpng.vcxproj".
+     1>Target "MakeDirsForMidl" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "_Midl" depends on it):
+       Task "Makedir"
+       Done executing task "Makedir".
+     1>Done building target "MakeDirsForMidl" in project "libpng.vcxproj".
+       Target "Midl" skipped, due to false condition; ('@(Midl)' != '') was evaluated as ('' != '').
+       Target "CustomBuild" skipped, due to false condition; ('@(CustomBuild)' != '') was evaluated as ('' != '').
+       Target "FxExport" skipped, due to false condition; ('@(FxCompile)' != '') was evaluated as ('' != '').
+       Target "FxCompile" skipped, due to false condition; ('@(FxCompile)' != '') was evaluated as ('' != '').
+     1>Target "ComputeMIDLGeneratedCompileInputs" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "_Midl" depends on it):
+     1>Done building target "ComputeMIDLGeneratedCompileInputs" in project "libpng.vcxproj".
+     1>Target "AfterMidl" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "_Midl" depends on it):
+     1>Done building target "AfterMidl" in project "libpng.vcxproj".
+     1>Target "_Midl" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+     1>Done building target "_Midl" in project "libpng.vcxproj".
+     1>Target "AfterBuildGenerateSources" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.BuildSteps.Targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+     1>Done building target "AfterBuildGenerateSources" in project "libpng.vcxproj".
+     1>Target "AfterBuildGenerateSourcesEvent" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+     1>Done building target "AfterBuildGenerateSourcesEvent" in project "libpng.vcxproj".
+     1>Target "_BuildGenerateSourcesAction" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "BuildGenerateSources" depends on it):
+     1>Done building target "_BuildGenerateSourcesAction" in project "libpng.vcxproj".
+     1>Target "BuildGenerateSources" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "Build" depends on it):
+     1>Done building target "BuildGenerateSources" in project "libpng.vcxproj".
+       Target "AssignProjectConfiguration" skipped. Previously built successfully.
+       Target "_SplitProjectReferencesByFileExistence" skipped. Previously built successfully.
+     1>Target "BuildCompileTraverse" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "BuildCompile" depends on it):
+       Task "MSBuild" skipped, due to false condition; ('$(BuildPassReferences)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceExistent)' != ''  and '%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true') was evaluated as ('' == 'true' and '' != '' and '' != ''  and '' == 'true').
+     1>Done building target "BuildCompileTraverse" in project "libpng.vcxproj".
+       Target "PrepareForBuild" skipped. Previously built successfully.
+       Target "ResolveReferences" skipped. Previously built successfully.
+     1>Target "BeforeClCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "_ClCompile" depends on it):
+     1>Done building target "BeforeClCompile" in project "libpng.vcxproj".
+       Target "ComputeMIDLGeneratedCompileInputs" skipped. Previously built successfully.
+     1>Target "ComputeCLInputPDBName" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "_ClCompile" depends on it):
+     1>Done building target "ComputeCLInputPDBName" in project "libpng.vcxproj".
+       Target "ResolveReferences" skipped. Previously built successfully.
+     1>Target "ComputeReferenceCLInput" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "_ClCompile" depends on it):
+       Task "WriteLinesToFile" skipped, due to false condition; (('@(_ReferenceCopyLocalPaths)'!='') and '$(DesignTimeBuild)' != 'true') was evaluated as ((''!='') and '' != 'true').
+       Task "Message" skipped, due to false condition; ('$(_REFERENCE_DEBUG)'=='true') was evaluated as (''=='true').
+     1>Done building target "ComputeReferenceCLInput" in project "libpng.vcxproj".
+     1>Target "WarnCompileDuplicatedFilename" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "_ClCompile" depends on it):
+       Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'png.c' != 'png.c' and 'Release Library\' == 'Release Library\').
+       Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'pngerror.c' != 'pngerror.c' and 'Release Library\' == 'Release Library\').
+       Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'pngget.c' != 'pngget.c' and 'Release Library\' == 'Release Library\').
+       Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'pngmem.c' != 'pngmem.c' and 'Release Library\' == 'Release Library\').
+       Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'pngpread.c' != 'pngpread.c' and 'Release Library\' == 'Release Library\').
+       Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'pngread.c' != 'pngread.c' and 'Release Library\' == 'Release Library\').
+       Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'pngrio.c' != 'pngrio.c' and 'Release Library\' == 'Release Library\').
+       Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'pngrtran.c' != 'pngrtran.c' and 'Release Library\' == 'Release Library\').
+       Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'pngrutil.c' != 'pngrutil.c' and 'Release Library\' == 'Release Library\').
+       Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'pngset.c' != 'pngset.c' and 'Release Library\' == 'Release Library\').
+       Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'pngtrans.c' != 'pngtrans.c' and 'Release Library\' == 'Release Library\').
+       Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'pngwio.c' != 'pngwio.c' and 'Release Library\' == 'Release Library\').
+       Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'pngwrite.c' != 'pngwrite.c' and 'Release Library\' == 'Release Library\').
+       Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'pngwtran.c' != 'pngwtran.c' and 'Release Library\' == 'Release Library\').
+       Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'pngwutil.c' != 'pngwutil.c' and 'Release Library\' == 'Release Library\').
+     1>Done building target "WarnCompileDuplicatedFilename" in project "libpng.vcxproj".
+     1>Target "FixupCLCompileOptions" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "_ClCompile" depends on it):
+     1>Done building target "FixupCLCompileOptions" in project "libpng.vcxproj".
+     1>Target "MakeDirsForCl" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "_ClCompile" depends on it):
+       Task "MakeDir"
+       Done executing task "MakeDir".
+     1>Done building target "MakeDirsForCl" in project "libpng.vcxproj".
+       Target "PrepareForBuild" skipped. Previously built successfully.
+       Target "SetBuildDefaultEnvironmentVariables" skipped. Previously built successfully.
+       Target "SetUserMacroEnvironmentVariables" skipped, due to false condition; ('@(BuildMacro)' != '' and '$(DesignTimeBuild)' != 'true') was evaluated as ('' != '' and '' != 'true').
+     1>Target "_SelectedFiles" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "SelectClCompile" depends on it):
+     1>Done building target "_SelectedFiles" in project "libpng.vcxproj".
+       Target "ComputeMIDLGeneratedCompileInputs" skipped. Previously built successfully.
+       Target "ComputeCLInputPDBName" skipped. Previously built successfully.
+       Target "ComputeReferenceCLInput" skipped. Previously built successfully.
+       Target "WarnCompileDuplicatedFilename" skipped. Previously built successfully.
+       Target "FixupCLCompileOptions" skipped. Previously built successfully.
+       Target "_SelectedFiles" skipped. Previously built successfully.
+     1>Target "SelectCustomBuild" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "SelectClCompile" depends on it):
+     1>Done building target "SelectCustomBuild" in project "libpng.vcxproj".
+     1>Target "SelectClCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "ClCompile" depends on it):
+     1>Done building target "SelectClCompile" in project "libpng.vcxproj".
+       Target "GenerateTargetFrameworkMonikerAttribute" skipped, due to false condition; ('$(GenerateTargetFrameworkAttribute)' == 'true') was evaluated as ('false' == 'true').
+       Target "ManagedIncrementalBuildPreProcessDependencyGraph" skipped, due to false condition; ('@(ClCompile)' != '' and '$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('..\..\..\png.c;..\..\..\pngerror.c;..\..\..\pngget.c;..\..\..\pngmem.c;..\..\..\pngpread.c;..\..\..\pngread.c;..\..\..\pngrio.c;..\..\..\pngrtran.c;..\..\..\pngrutil.c;..\..\..\pngset.c;..\..\..\pngtrans.c;..\..\..\pngwio.c;..\..\..\pngwrite.c;..\..\..\pngwtran.c;..\..\..\pngwutil.c' != '' and 'false' == 'True').
+     1>Target "ClCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "_ClCompile" depends on it):
+       Task "Delete"
+         File "Release Library\libpng.pch" doesn't exist. Skipping.
+       Done executing task "Delete".
+       Using "CL" task from assembly "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.Build.CppTasks.Common.dll".
+       Task "CL"
+         Forcing recompile of all source files due to missing PDB "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\Release Library\libpng_a.pdb".
+         Environment Variables passed to tool:
+           VS_UNICODE_OUTPUT=1296
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\\zlib-1.2.8" /I"C:\Program Files (x86)\Visual Leak Detector\include" /Zi /nologo /W4 /WX /Ox /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _MBCS /GF /Gm- /EHsc /MD /GS /Gy /fp:precise /fp:except- /Zc:wchar_t- /Zc:forScope /Zc:inline /Yc"pngpriv.h" /Fp"Release Library\libpng.pch" /Fo"Release Library\\" /Fd"C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\Release Library\libpng_a.pdb" /FR"Release Library\\" /Gd /TC /wd4996 /wd4127 /analyze- /errorReport:prompt ..\..\..\png.c
+         Tracking command:
+         C:\Program Files (x86)\MSBuild\14.0\bin\Tracker.exe /d "C:\Program Files (x86)\MSBuild\14.0\bin\FileTracker32.dll" /i "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\Release Library\libpng.tlog" /r C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PNG.C /b MSBuildConsole_CancelEventc5441325a36f4e4fa7e1c30decd59335  /c "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe"  /c /I"C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\\zlib-1.2.8" /I"C:\Program Files (x86)\Visual Leak Detector\include" /Zi /nologo /W4 /WX /Ox /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _MBCS /GF /Gm- /EHsc /MD /GS /Gy /fp:precise /fp:except- /Zc:wchar_t- /Zc:forScope /Zc:inline /Yc"pngpriv.h" /Fp"Release Library\libpng.pch" /Fo"Release Library\\" /Fd"C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\Release Library\libpng_a.pdb" /FR"Release Library\\" /Gd /TC /wd4996 /wd4127 /analyze- /errorReport:prompt ..\..\..\png.c
+         png.c
+       Done executing task "CL".
+       Task "CL" skipped, due to false condition; ('%(ClCompile.PrecompiledHeader)' == 'Create' and '%(ClCompile.ExcludedFromBuild)'!='true' and '%(ClCompile.CompilerIteration)' == '') was evaluated as ('Use' == 'Create' and ''!='true' and '' == '').
+       Task "CL" skipped, due to false condition; ('%(ClCompile.PrecompiledHeader)' != 'Create' and '%(ClCompile.ExcludedFromBuild)'!='true' and '%(ClCompile.CompilerIteration)' == '' and @(ClCompile) != '') was evaluated as ('Create' != 'Create' and ''!='true' and '' == '' and ..\..\..\png.c != '').
+       Task "CL"
+         Read Tracking Logs:
+         	Release Library\libpng.tlog\CL.read.1.tlog
+         Outputs for C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PNGERROR.C|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PNGGET.C|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PNGMEM.C|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PNGPREAD.C|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PNGREAD.C|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PNGRIO.C|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PNGRTRAN.C|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PNGRUTIL.C|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PNGSET.C|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PNGTRANS.C|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PNGWIO.C|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PNGWRITE.C|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PNGWTRAN.C|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PNGWUTIL.C:
+         	C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PROJECTS\VSTUDIO2015\LIBPNG\RELEASE LIBRARY\PNGERROR.OBJ
+         	C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PROJECTS\VSTUDIO2015\LIBPNG\RELEASE LIBRARY\PNGERROR.SBR
+         	C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PROJECTS\VSTUDIO2015\LIBPNG\RELEASE LIBRARY\PNGGET.OBJ
+         	C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PROJECTS\VSTUDIO2015\LIBPNG\RELEASE LIBRARY\PNGGET.SBR
+         	C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PROJECTS\VSTUDIO2015\LIBPNG\RELEASE LIBRARY\PNGMEM.OBJ
+         	C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PROJECTS\VSTUDIO2015\LIBPNG\RELEASE LIBRARY\PNGMEM.SBR
+         	C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PROJECTS\VSTUDIO2015\LIBPNG\RELEASE LIBRARY\PNGPREAD.OBJ
+         	C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PROJECTS\VSTUDIO2015\LIBPNG\RELEASE LIBRARY\PNGPREAD.SBR
+         	C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PROJECTS\VSTUDIO2015\LIBPNG\RELEASE LIBRARY\PNGREAD.OBJ
+         	C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PROJECTS\VSTUDIO2015\LIBPNG\RELEASE LIBRARY\PNGREAD.SBR
+         	C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PROJECTS\VSTUDIO2015\LIBPNG\RELEASE LIBRARY\PNGRIO.OBJ
+         	C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PROJECTS\VSTUDIO2015\LIBPNG\RELEASE LIBRARY\PNGRIO.SBR
+         	C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PROJECTS\VSTUDIO2015\LIBPNG\RELEASE LIBRARY\PNGRTRAN.OBJ
+         	C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PROJECTS\VSTUDIO2015\LIBPNG\RELEASE LIBRARY\PNGRTRAN.SBR
+         	C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PROJECTS\VSTUDIO2015\LIBPNG\RELEASE LIBRARY\PNGRUTIL.OBJ
+         	C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PROJECTS\VSTUDIO2015\LIBPNG\RELEASE LIBRARY\PNGRUTIL.SBR
+         	C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PROJECTS\VSTUDIO2015\LIBPNG\RELEASE LIBRARY\PNGSET.OBJ
+         	C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PROJECTS\VSTUDIO2015\LIBPNG\RELEASE LIBRARY\PNGSET.SBR
+         	C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PROJECTS\VSTUDIO2015\LIBPNG\RELEASE LIBRARY\PNGTRANS.OBJ
+         	C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PROJECTS\VSTUDIO2015\LIBPNG\RELEASE LIBRARY\PNGTRANS.SBR
+         	C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PROJECTS\VSTUDIO2015\LIBPNG\RELEASE LIBRARY\PNGWIO.OBJ
+         	C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PROJECTS\VSTUDIO2015\LIBPNG\RELEASE LIBRARY\PNGWIO.SBR
+         	C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PROJECTS\VSTUDIO2015\LIBPNG\RELEASE LIBRARY\PNGWRITE.OBJ
+         	C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PROJECTS\VSTUDIO2015\LIBPNG\RELEASE LIBRARY\PNGWRITE.SBR
+         	C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PROJECTS\VSTUDIO2015\LIBPNG\RELEASE LIBRARY\PNGWTRAN.OBJ
+         	C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PROJECTS\VSTUDIO2015\LIBPNG\RELEASE LIBRARY\PNGWTRAN.SBR
+         	C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PROJECTS\VSTUDIO2015\LIBPNG\RELEASE LIBRARY\PNGWUTIL.OBJ
+         	C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PROJECTS\VSTUDIO2015\LIBPNG\RELEASE LIBRARY\PNGWUTIL.SBR
+         ..\..\..\pngerror.c will be compiled as it was not found in the tracking log.
+         ..\..\..\pngget.c will be compiled as it was not found in the tracking log.
+         ..\..\..\pngmem.c will be compiled as it was not found in the tracking log.
+         ..\..\..\pngpread.c will be compiled as it was not found in the tracking log.
+         ..\..\..\pngread.c will be compiled as it was not found in the tracking log.
+         ..\..\..\pngrio.c will be compiled as it was not found in the tracking log.
+         ..\..\..\pngrtran.c will be compiled as it was not found in the tracking log.
+         ..\..\..\pngrutil.c will be compiled as it was not found in the tracking log.
+         ..\..\..\pngset.c will be compiled as it was not found in the tracking log.
+         ..\..\..\pngtrans.c will be compiled as it was not found in the tracking log.
+         ..\..\..\pngwio.c will be compiled as it was not found in the tracking log.
+         ..\..\..\pngwrite.c will be compiled as it was not found in the tracking log.
+         ..\..\..\pngwtran.c will be compiled as it was not found in the tracking log.
+         ..\..\..\pngwutil.c will be compiled as it was not found in the tracking log.
+         No output for C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PNGERROR.C|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PNGGET.C|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PNGMEM.C|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PNGPREAD.C|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PNGREAD.C|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PNGRIO.C|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PNGRTRAN.C|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PNGRUTIL.C|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PNGSET.C|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PNGTRANS.C|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PNGWIO.C|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PNGWRITE.C|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PNGWTRAN.C|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PNGWUTIL.C was found in the tracking log; source compilation required.
+         Write Tracking Logs:
+         	Release Library\libpng.tlog\CL.write.1.tlog
+         Environment Variables passed to tool:
+           VS_UNICODE_OUTPUT=1456
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\\zlib-1.2.8" /I"C:\Program Files (x86)\Visual Leak Detector\include" /Zi /nologo /W4 /WX /Ox /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _MBCS /GF /Gm- /EHsc /MD /GS /Gy /fp:precise /fp:except- /Zc:wchar_t- /Zc:forScope /Zc:inline /Yu"pngpriv.h" /Fp"Release Library\libpng.pch" /Fo"Release Library\\" /Fd"C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\Release Library\libpng_a.pdb" /FR"Release Library\\" /Gd /TC /wd4996 /wd4127 /analyze- /errorReport:prompt ..\..\..\pngerror.c ..\..\..\pngget.c ..\..\..\pngmem.c ..\..\..\pngpread.c ..\..\..\pngread.c ..\..\..\pngrio.c ..\..\..\pngrtran.c ..\..\..\pngrutil.c ..\..\..\pngset.c ..\..\..\pngtrans.c ..\..\..\pngwio.c ..\..\..\pngwrite.c ..\..\..\pngwtran.c ..\..\..\pngwutil.c
+         Tracking command:
+         C:\Program Files (x86)\MSBuild\14.0\bin\Tracker.exe /d "C:\Program Files (x86)\MSBuild\14.0\bin\FileTracker32.dll" /i "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\Release Library\libpng.tlog" /r "C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PNGERROR.C|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PNGGET.C|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PNGMEM.C|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PNGPREAD.C|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PNGREAD.C|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PNGRIO.C|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PNGRTRAN.C|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PNGRUTIL.C|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PNGSET.C|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PNGTRANS.C|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PNGWIO.C|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PNGWRITE.C|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PNGWTRAN.C|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PNGWUTIL.C" /b MSBuildConsole_CancelEventf56f8aa1f40b46798a649f70c5ded1b3  /c "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe"  /c /I"C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\\zlib-1.2.8" /I"C:\Program Files (x86)\Visual Leak Detector\include" /Zi /nologo /W4 /WX /Ox /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _MBCS /GF /Gm- /EHsc /MD /GS /Gy /fp:precise /fp:except- /Zc:wchar_t- /Zc:forScope /Zc:inline /Yu"pngpriv.h" /Fp"Release Library\libpng.pch" /Fo"Release Library\\" /Fd"C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\Release Library\libpng_a.pdb" /FR"Release Library\\" /Gd /TC /wd4996 /wd4127 /analyze- /errorReport:prompt ..\..\..\pngerror.c ..\..\..\pngget.c ..\..\..\pngmem.c ..\..\..\pngpread.c ..\..\..\pngread.c ..\..\..\pngrio.c ..\..\..\pngrtran.c ..\..\..\pngrutil.c ..\..\..\pngset.c ..\..\..\pngtrans.c ..\..\..\pngwio.c ..\..\..\pngwrite.c ..\..\..\pngwtran.c ..\..\..\pngwutil.c
+         pngerror.c
+         pngget.c
+         pngmem.c
+         pngpread.c
+         pngread.c
+         pngrio.c
+         pngrtran.c
+         pngrutil.c
+         pngset.c
+         pngtrans.c
+         pngwio.c
+         pngwrite.c
+         pngwtran.c
+         pngwutil.c
+       Done executing task "CL".
+     1>Done building target "ClCompile" in project "libpng.vcxproj".
+       Target "ManagedIncrementalBuildPostProcessDependencyGraph" skipped, due to false condition; ('@(ClCompile)' != '' and '$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('..\..\..\png.c;..\..\..\pngerror.c;..\..\..\pngget.c;..\..\..\pngmem.c;..\..\..\pngpread.c;..\..\..\pngread.c;..\..\..\pngrio.c;..\..\..\pngrtran.c;..\..\..\pngrutil.c;..\..\..\pngset.c;..\..\..\pngtrans.c;..\..\..\pngwio.c;..\..\..\pngwrite.c;..\..\..\pngwtran.c;..\..\..\pngwutil.c' != '' and 'false' == 'True').
+     1>Target "AfterClCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "_ClCompile" depends on it):
+     1>Done building target "AfterClCompile" in project "libpng.vcxproj".
+     1>Target "_ClCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "_BuildCompileAction" depends on it):
+     1>Done building target "_ClCompile" in project "libpng.vcxproj".
+       Target "_ResGen" skipped, due to false condition; ('@(EmbeddedResource)'!='') was evaluated as (''!='').
+     1>Target "BeforeResourceCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "_ResourceCompile" depends on it):
+     1>Done building target "BeforeResourceCompile" in project "libpng.vcxproj".
+     1>Target "MakeDirsForResourceCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "_ResourceCompile" depends on it):
+       Task "MakeDir"
+       Done executing task "MakeDir".
+     1>Done building target "MakeDirsForResourceCompile" in project "libpng.vcxproj".
+       Target "_SelectedFiles" skipped. Previously built successfully.
+       Target "SelectCustomBuild" skipped. Previously built successfully.
+     1>Target "SelectResourceCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "ResourceCompile" depends on it):
+     1>Done building target "SelectResourceCompile" in project "libpng.vcxproj".
+     1>Target "ResourceCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "_ResourceCompile" depends on it):
+       Task "RC" skipped, due to false condition; ('%(ResourceCompile.ExcludedFromBuild)'!='true') was evaluated as ('true'!='true').
+     1>Done building target "ResourceCompile" in project "libpng.vcxproj".
+     1>Target "AfterResourceCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "_ResourceCompile" depends on it):
+     1>Done building target "AfterResourceCompile" in project "libpng.vcxproj".
+     1>Target "_ResourceCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "_BuildCompileAction" depends on it):
+     1>Done building target "_ResourceCompile" in project "libpng.vcxproj".
+       Target "_ImpLib" skipped, due to false condition; ('$(ImpLibCompiled)' == 'true') was evaluated as ('' == 'true').
+     1>Target "BeforeLib" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "_Lib" depends on it):
+     1>Done building target "BeforeLib" in project "libpng.vcxproj".
+     1>Target "ComputeLibAdditionalOptions" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "_Lib" depends on it):
+     1>Done building target "ComputeLibAdditionalOptions" in project "libpng.vcxproj".
+     1>Target "ComputeRCOutputs" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "ComputeRCGeneratedLibInputs" depends on it):
+     1>Done building target "ComputeRCOutputs" in project "libpng.vcxproj".
+     1>Target "ComputeRCGeneratedLibInputs" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "_Lib" depends on it):
+     1>Done building target "ComputeRCGeneratedLibInputs" in project "libpng.vcxproj".
+     1>Target "ComputeCustomBuildOutput" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "_Lib" depends on it):
+       Task "CreateItem" skipped, due to false condition; ('%(CustomBuildDirsToMake.OutputFileToTool)'!='') was evaluated as (''!='').
+       Task "MakeDir"
+       Done executing task "MakeDir".
+     1>Done building target "ComputeCustomBuildOutput" in project "libpng.vcxproj".
+       Target "ComputeMIDLGeneratedCompileInputs" skipped. Previously built successfully.
+       Target "ComputeCLInputPDBName" skipped. Previously built successfully.
+       Target "ComputeReferenceCLInput" skipped. Previously built successfully.
+       Target "WarnCompileDuplicatedFilename" skipped. Previously built successfully.
+       Target "FixupCLCompileOptions" skipped. Previously built successfully.
+     1>Target "ComputeCLOutputs" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "ComputeCLGeneratedLibInputs" depends on it):
+     1>Done building target "ComputeCLOutputs" in project "libpng.vcxproj".
+     1>Target "ComputeCLGeneratedLibInputs" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "_Lib" depends on it):
+     1>Done building target "ComputeCLGeneratedLibInputs" in project "libpng.vcxproj".
+     1>Target "ComputeLibInputsFromProject" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "_Lib" depends on it):
+     1>Done building target "ComputeLibInputsFromProject" in project "libpng.vcxproj".
+       Target "ComputeReferenceLibInputs" skipped, due to false condition; (@(ProjectReference) != '') was evaluated as ( != '').
+     1>Target "MakeDirsForLib" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "_Lib" depends on it):
+       Task "MakeDir"
+       Done executing task "MakeDir".
+     1>Done building target "MakeDirsForLib" in project "libpng.vcxproj".
+     1>Target "DoLibOutputFilesMatch" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "_Lib" depends on it):
+       Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLib)' == '') was evaluated as ('C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\Release Library\libpng15.lib' == '').
+       Using "VCMessage" task from assembly "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.Build.CppTasks.Common.dll".
+       Task "VCMessage"
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1357,5): warning MSB8012: TargetPath(C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\Release Library\libpng.lib) does not match the Library's OutputFile property value (C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\Release Library\libpng15.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+       Done executing task "VCMessage".
+       Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLib)' != '' and '%(_OutputFileFromLib.Extension)' != '' and '%(_OutputFileFromLib.Extension)' != '$(TargetExt)') was evaluated as ('C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\Release Library\libpng15.lib' != '' and '.lib' != '' and '.lib' != '.lib').
+       Task "VCMessage"
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1359,5): warning MSB8012: TargetName(libpng) does not match the Library's OutputFile property value (libpng15). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+       Done executing task "VCMessage".
+     1>Done building target "DoLibOutputFilesMatch" in project "libpng.vcxproj".
+     1>Target "PreLinkEvent" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "_Lib" depends on it):
+       Task "Message" skipped, due to false condition; ('%(PreLinkEvent.Message)' != '' and '%(PreLinkEvent.Command)' != '') was evaluated as ('' != '' and '' != '').
+       Task "Exec" skipped, due to false condition; ('%(PreLinkEvent.Command)' != '') was evaluated as ('' != '').
+     1>Done building target "PreLinkEvent" in project "libpng.vcxproj".
+     1>Target "Lib" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "_Lib" depends on it):
+       Using "LIB" task from assembly "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.Build.CppTasks.Common.dll".
+       Task "LIB"
+         Forcing rebuild of all source files due to missing command TLog "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\Release Library\libpng.tlog\lib.command.1.tlog".
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\Lib.exe /OUT:"C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\Release Library\libpng15.lib" /LIBPATH:"C:\Program Files (x86)\Visual Leak Detector\lib\Win32" /NOLOGO /LTCG "Release Library\png.obj"
+         "Release Library\pngerror.obj"
+         "Release Library\pngget.obj"
+         "Release Library\pngmem.obj"
+         "Release Library\pngpread.obj"
+         "Release Library\pngread.obj"
+         "Release Library\pngrio.obj"
+         "Release Library\pngrtran.obj"
+         "Release Library\pngrutil.obj"
+         "Release Library\pngset.obj"
+         "Release Library\pngtrans.obj"
+         "Release Library\pngwio.obj"
+         "Release Library\pngwrite.obj"
+         "Release Library\pngwtran.obj"
+         "Release Library\pngwutil.obj"
+         Tracking command:
+         C:\Program Files (x86)\MSBuild\14.0\bin\Tracker.exe /d "C:\Program Files (x86)\MSBuild\14.0\bin\FileTracker32.dll" /i "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\Release Library\libpng.tlog" /r "C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PROJECTS\VSTUDIO2015\LIBPNG\RELEASE LIBRARY\PNG.OBJ|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PROJECTS\VSTUDIO2015\LIBPNG\RELEASE LIBRARY\PNGERROR.OBJ|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PROJECTS\VSTUDIO2015\LIBPNG\RELEASE LIBRARY\PNGGET.OBJ|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PROJECTS\VSTUDIO2015\LIBPNG\RELEASE LIBRARY\PNGMEM.OBJ|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PROJECTS\VSTUDIO2015\LIBPNG\RELEASE LIBRARY\PNGPREAD.OBJ|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PROJECTS\VSTUDIO2015\LIBPNG\RELEASE LIBRARY\PNGREAD.OBJ|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PROJECTS\VSTUDIO2015\LIBPNG\RELEASE LIBRARY\PNGRIO.OBJ|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PROJECTS\VSTUDIO2015\LIBPNG\RELEASE LIBRARY\PNGRTRAN.OBJ|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PROJECTS\VSTUDIO2015\LIBPNG\RELEASE LIBRARY\PNGRUTIL.OBJ|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PROJECTS\VSTUDIO2015\LIBPNG\RELEASE LIBRARY\PNGSET.OBJ|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PROJECTS\VSTUDIO2015\LIBPNG\RELEASE LIBRARY\PNGTRANS.OBJ|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PROJECTS\VSTUDIO2015\LIBPNG\RELEASE LIBRARY\PNGWIO.OBJ|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PROJECTS\VSTUDIO2015\LIBPNG\RELEASE LIBRARY\PNGWRITE.OBJ|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PROJECTS\VSTUDIO2015\LIBPNG\RELEASE LIBRARY\PNGWTRAN.OBJ|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PROJECTS\VSTUDIO2015\LIBPNG\RELEASE LIBRARY\PNGWUTIL.OBJ" /b MSBuildConsole_CancelEventd7952fcbfc5e43e7bfb8f132b7b6e92d  /c "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\Lib.exe"  /OUT:"C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\Release Library\libpng15.lib" /LIBPATH:"C:\Program Files (x86)\Visual Leak Detector\lib\Win32" /NOLOGO /LTCG "Release Library\png.obj"
+         "Release Library\pngerror.obj"
+         "Release Library\pngget.obj"
+         "Release Library\pngmem.obj"
+         "Release Library\pngpread.obj"
+         "Release Library\pngread.obj"
+         "Release Library\pngrio.obj"
+         "Release Library\pngrtran.obj"
+         "Release Library\pngrutil.obj"
+         "Release Library\pngset.obj"
+         "Release Library\pngtrans.obj"
+         "Release Library\pngwio.obj"
+         "Release Library\pngwrite.obj"
+         "Release Library\pngwtran.obj"
+         "Release Library\pngwutil.obj"
+       Done executing task "LIB".
+       Task "Message"
+         libpng.vcxproj -> C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\Release Library\libpng.lib
+       Done executing task "Message".
+     1>Done building target "Lib" in project "libpng.vcxproj".
+     1>Target "AfterLib" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "_Lib" depends on it):
+     1>Done building target "AfterLib" in project "libpng.vcxproj".
+     1>Target "_Lib" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "_BuildCompileAction" depends on it):
+     1>Done building target "_Lib" in project "libpng.vcxproj".
+     1>Target "AfterBuildCompileEvent" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "_BuildCompileAction" depends on it):
+     1>Done building target "AfterBuildCompileEvent" in project "libpng.vcxproj".
+     1>Target "_BuildCompileAction" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "BuildCompile" depends on it):
+     1>Done building target "_BuildCompileAction" in project "libpng.vcxproj".
+     1>Target "BuildCompile" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "Build" depends on it):
+     1>Done building target "BuildCompile" in project "libpng.vcxproj".
+       Target "AssignProjectConfiguration" skipped. Previously built successfully.
+       Target "_SplitProjectReferencesByFileExistence" skipped. Previously built successfully.
+     1>Target "BuildLinkTraverse" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "BuildLink" depends on it):
+       Task "MSBuild" skipped, due to false condition; ('$(BuildPassReferences)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceExistent)' != ''  and '%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true') was evaluated as ('' == 'true' and '' != '' and '' != ''  and '' == 'true').
+     1>Done building target "BuildLinkTraverse" in project "libpng.vcxproj".
+       Target "PrepareForBuild" skipped. Previously built successfully.
+       Target "ResolveReferences" skipped. Previously built successfully.
+     1>Target "ComputeLegacyManifestEmbedding" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "_BuildLinkAction" depends on it):
+       Task "VCMessage" skipped, due to false condition; ('$(RevertManifestEmbedding)' == 'true' and '$(_LegacyManifestEmbeddingDebug)' == 'true') was evaluated as ('' == 'true' and '' == 'true').
+     1>Done building target "ComputeLegacyManifestEmbedding" in project "libpng.vcxproj".
+       Target "_Link" skipped, due to false condition; ('$(LinkCompiled)' == 'true') was evaluated as ('' == 'true').
+     1>Target "_ALink" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Done building target "_ALink" in project "libpng.vcxproj".
+       Target "ComputeLegacyManifestEmbedding" skipped. Previously built successfully.
+     1>Target "_Manifest" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "_BuildLinkAction" depends on it):
+       Task "CallTarget" skipped, due to false condition; ('$(LegacyManifestEmbedding)' == 'true') was evaluated as ('' == 'true').
+     1>Done building target "_Manifest" in project "libpng.vcxproj".
+     1>Target "RegisterOutput" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "_BuildLinkAction" depends on it):
+       Task "Exec" skipped, due to false condition; ('$(ConfigurationType)'=='DynamicLibrary' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'!='true') was evaluated as ('StaticLibrary'=='DynamicLibrary' and ''=='true' and ''!='true').
+       Task "Exec" skipped, due to false condition; ('$(ConfigurationType)'=='DynamicLibrary' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'=='true') was evaluated as ('StaticLibrary'=='DynamicLibrary' and ''=='true' and ''=='true').
+       Task "Exec" skipped, due to false condition; ('$(ConfigurationType)'=='Application' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'!='true') was evaluated as ('StaticLibrary'=='Application' and ''=='true' and ''!='true').
+       Task "Exec" skipped, due to false condition; ('$(ConfigurationType)'=='Application' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'=='true') was evaluated as ('StaticLibrary'=='Application' and ''=='true' and ''=='true').
+       Task "VCMessage" skipped, due to false condition; ('$(_RegisterOutputExitCode)' != '' and '$(_RegisterOutputExitCode)' != '0') was evaluated as ('' != '' and '' != '0').
+     1>Done building target "RegisterOutput" in project "libpng.vcxproj".
+       Target "PrepareForBuild" skipped. Previously built successfully.
+       Target "ResolveReferences" skipped. Previously built successfully.
+     1>Target "ResolvedXDCMake" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "_XdcMake" depends on it):
+       Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.Extension)' == '.vcxproj' and '@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceExistent)' != '' and '$(_ClCompileGenerateXMLDocumentationFiles)' == 'true') was evaluated as ('' == '.vcxproj' and '' != '' and '' != '' and '' == 'true').
+     1>Done building target "ResolvedXDCMake" in project "libpng.vcxproj".
+     1>Target "ComputeCLCompileGeneratedXDCFiles" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "_XdcMake" depends on it):
+     1>Done building target "ComputeCLCompileGeneratedXDCFiles" in project "libpng.vcxproj".
+     1>Target "MakeDirsForXdcMake" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "_XdcMake" depends on it):
+       Task "MakeDir"
+       Done executing task "MakeDir".
+     1>Done building target "MakeDirsForXdcMake" in project "libpng.vcxproj".
+       Target "XdcMake" skipped, due to false condition; ('@(XdcMake)' != '') was evaluated as ('' != '').
+     1>Target "_XdcMake" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Done building target "_XdcMake" in project "libpng.vcxproj".
+     1>Target "ComputeCLCompileGeneratedSbrFiles" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "_BscMake" depends on it):
+     1>Done building target "ComputeCLCompileGeneratedSbrFiles" in project "libpng.vcxproj".
+     1>Target "MakeDirsForBscMake" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "_BscMake" depends on it):
+       Task "MakeDir"
+       Done executing task "MakeDir".
+     1>Done building target "MakeDirsForBscMake" in project "libpng.vcxproj".
+     1>Target "BscMake" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "_BscMake" depends on it):
+       Using "BSCMake" task from assembly "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.Build.CppTasks.Common.dll".
+       Task "BSCMake"
+         Forcing rebuild of all source files due to missing command TLog "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\Release Library\libpng.tlog\BscMake.command.1.tlog".
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\bscmake.exe /nologo /o"C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\Release Library\libpng.bsc" "Release Library\png.sbr" "Release Library\pngerror.sbr" "Release Library\pngget.sbr" "Release Library\pngmem.sbr" "Release Library\pngpread.sbr" "Release Library\pngread.sbr" "Release Library\pngrio.sbr" "Release Library\pngrtran.sbr" "Release Library\pngrutil.sbr" "Release Library\pngset.sbr" "Release Library\pngtrans.sbr" "Release Library\pngwio.sbr" "Release Library\pngwrite.sbr" "Release Library\pngwtran.sbr" "Release Library\pngwutil.sbr"
+         Tracking command:
+         C:\Program Files (x86)\MSBuild\14.0\bin\Tracker.exe /d "C:\Program Files (x86)\MSBuild\14.0\bin\FileTracker32.dll" /i "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\Release Library\libpng.tlog" /r "C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PROJECTS\VSTUDIO2015\LIBPNG\RELEASE LIBRARY\PNG.SBR|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PROJECTS\VSTUDIO2015\LIBPNG\RELEASE LIBRARY\PNGERROR.SBR|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PROJECTS\VSTUDIO2015\LIBPNG\RELEASE LIBRARY\PNGGET.SBR|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PROJECTS\VSTUDIO2015\LIBPNG\RELEASE LIBRARY\PNGMEM.SBR|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PROJECTS\VSTUDIO2015\LIBPNG\RELEASE LIBRARY\PNGPREAD.SBR|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PROJECTS\VSTUDIO2015\LIBPNG\RELEASE LIBRARY\PNGREAD.SBR|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PROJECTS\VSTUDIO2015\LIBPNG\RELEASE LIBRARY\PNGRIO.SBR|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PROJECTS\VSTUDIO2015\LIBPNG\RELEASE LIBRARY\PNGRTRAN.SBR|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PROJECTS\VSTUDIO2015\LIBPNG\RELEASE LIBRARY\PNGRUTIL.SBR|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PROJECTS\VSTUDIO2015\LIBPNG\RELEASE LIBRARY\PNGSET.SBR|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PROJECTS\VSTUDIO2015\LIBPNG\RELEASE LIBRARY\PNGTRANS.SBR|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PROJECTS\VSTUDIO2015\LIBPNG\RELEASE LIBRARY\PNGWIO.SBR|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PROJECTS\VSTUDIO2015\LIBPNG\RELEASE LIBRARY\PNGWRITE.SBR|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PROJECTS\VSTUDIO2015\LIBPNG\RELEASE LIBRARY\PNGWTRAN.SBR|C:\GITHUB\SCENARIOS-VS\LIBRARY\SOURCE\LIBPNG-MASTER\PROJECTS\VSTUDIO2015\LIBPNG\RELEASE LIBRARY\PNGWUTIL.SBR" /b MSBuildConsole_CancelEvent3ae4296eb77b471984fe30f9ffbfa8c7  /c "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\bscmake.exe"  /nologo /o"C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\Release Library\libpng.bsc" "Release Library\png.sbr" "Release Library\pngerror.sbr" "Release Library\pngget.sbr" "Release Library\pngmem.sbr" "Release Library\pngpread.sbr" "Release Library\pngread.sbr" "Release Library\pngrio.sbr" "Release Library\pngrtran.sbr" "Release Library\pngrutil.sbr" "Release Library\pngset.sbr" "Release Library\pngtrans.sbr" "Release Library\pngwio.sbr" "Release Library\pngwrite.sbr" "Release Library\pngwtran.sbr" "Release Library\pngwutil.sbr"
+       Done executing task "BSCMake".
+     1>Done building target "BscMake" in project "libpng.vcxproj".
+       Target "CustomBuildStep" skipped, due to false condition; ('@(CustomBuildStep)' != '' and '$(SelectedFiles)'=='') was evaluated as ('' != '' and ''=='').
+     1>Target "_BscMake" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Done building target "_BscMake" in project "libpng.vcxproj".
+       Target "RunMergeNativeCodeAnalysis" skipped, due to false condition; ('$(Language)'=='C++' and '$(RunCodeAnalysisOnThisProject)'=='true') was evaluated as ('C++'=='C++' and ''=='true').
+       Target "RunNativeCodeAnalysis" skipped, due to false condition; ('$(Language)'=='C++' and '$(RunCodeAnalysisOnThisProject)'=='true') was evaluated as ('C++'=='C++' and ''=='true').
+     1>Target "_GenerateSatelliteAssemblyInputs" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "CreateSatelliteAssemblies" depends on it):
+       Task "Warning" skipped, due to false condition; ('@(ManifestResourceWithCulture)'!='' and '%(ManifestResourceWithCulture.EmittedForCompatibilityOnly)'=='') was evaluated as (''!='' and ''=='').
+       Task "Warning" skipped, due to false condition; ('@(ManifestNonResxWithCultureOnDisk)'!='' and '%(ManifestNonResxWithCultureOnDisk.EmittedForCompatibilityOnly)'=='') was evaluated as (''!='' and ''=='').
+     1>Done building target "_GenerateSatelliteAssemblyInputs" in project "libpng.vcxproj".
+       Target "ComputeIntermediateSatelliteAssemblies" skipped, due to false condition; (@(ReferenceSatellitePaths->'%(DestinationSubDirectory)') != '') was evaluated as ( != '').
+       Target "GenerateSatelliteAssemblies" skipped, due to false condition; ('@(_SatelliteAssemblyResourceInputs)' != '') was evaluated as ('' != '').
+     1>Target "CreateSatelliteAssemblies" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Done building target "CreateSatelliteAssemblies" in project "libpng.vcxproj".
+     1>Target "_Appverifier" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Done building target "_Appverifier" in project "libpng.vcxproj".
+     1>Target "_Deploy" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Done building target "_Deploy" in project "libpng.vcxproj".
+       Target "ComputeIntermediateSatelliteAssemblies" skipped, due to false condition; (@(ReferenceSatellitePaths->'%(DestinationSubDirectory)') != '') was evaluated as ( != '').
+       Target "_CopyFilesMarkedCopyLocal" skipped, due to false condition; ('@(ReferenceCopyLocalPaths)' != '') was evaluated as ('' != '').
+     1>Target "AssignTargetPaths" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "GetCopyToOutputDirectoryItems" depends on it):
+       Task "AssignTargetPath"
+       Done executing task "AssignTargetPath".
+       Task "AssignTargetPath"
+       Done executing task "AssignTargetPath".
+       Task "AssignTargetPath"
+       Done executing task "AssignTargetPath".
+       Task "AssignTargetPath"
+       Done executing task "AssignTargetPath".
+       Task "AssignTargetPath" skipped, due to false condition; ('@(_DeploymentBaseManifestWithTargetPath)'=='' and '%(None.Extension)'=='.manifest') was evaluated as (''=='' and ''=='.manifest').
+     1>Done building target "AssignTargetPaths" in project "libpng.vcxproj".
+       Target "_SplitProjectReferencesByFileExistence" skipped. Previously built successfully.
+     1>Target "GetCopyToOutputDirectoryXamlAppDefs" in file "C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\Microsoft.Xaml.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "GetCopyToOutputDirectoryItems" depends on it):
+       Task "AssignTargetPath"
+       Done executing task "AssignTargetPath".
+     1>Done building target "GetCopyToOutputDirectoryXamlAppDefs" in project "libpng.vcxproj".
+     1>Target "GetCopyToOutputDirectoryItems" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "_CopySourceItemsToOutputDirectory" depends on it):
+       Task "MSBuild" skipped, due to false condition; ('@(_MSBuildProjectReferenceExistent)' != '' and '$(_GetChildProjectCopyToOutputDirectoryItems)' == 'true' and '%(_MSBuildProjectReferenceExistent.Private)' != 'false' and '$(UseCommonOutputDirectory)' != 'true') was evaluated as ('' != '' and 'true' == 'true' and '' != 'false' and 'false' != 'true').
+       Task "AssignTargetPath"
+       Done executing task "AssignTargetPath".
+     1>Done building target "GetCopyToOutputDirectoryItems" in project "libpng.vcxproj".
+       Target "_CopyOutOfDateSourceItemsToOutputDirectory" skipped, due to false condition; ( '@(_SourceItemsToCopyToOutputDirectory)' != '' ) was evaluated as ( '' != '' ).
+       Target "_CopyOutOfDateSourceItemsToOutputDirectoryAlways" skipped, due to false condition; ( '@(_SourceItemsToCopyToOutputDirectoryAlways)' != '' ) was evaluated as ( '' != '' ).
+     1>Target "_CopySourceItemsToOutputDirectory" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "CopyFilesToOutputDirectory" depends on it):
+     1>Done building target "_CopySourceItemsToOutputDirectory" in project "libpng.vcxproj".
+       Target "_CopyAppConfigFile" skipped, due to false condition; ( '@(AppConfigWithTargetPath)' != '' ) was evaluated as ( '' != '' ).
+       Target "_CopyManifestFiles" skipped, due to false condition; ( '$(_DeploymentCopyApplicationManifest)'=='true' or '$(GenerateClickOnceManifests)'=='true' ) was evaluated as ( ''=='true' or ''=='true' ).
+     1>Target "_CheckForCompileOutputs" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "CopyFilesToOutputDirectory" depends on it):
+     1>Done building target "_CheckForCompileOutputs" in project "libpng.vcxproj".
+       Target "_SGenCheckForOutputs" skipped, due to false condition; ('$(_SGenGenerateSerializationAssembliesConfig)' == 'On' or ('@(WebReferenceUrl)'!='' and '$(_SGenGenerateSerializationAssembliesConfig)' == 'Auto')) was evaluated as ('Auto' == 'On' or (''!='' and 'Auto' == 'Auto')).
+     1>Target "CopyFilesToOutputDirectory" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "PrepareForRun" depends on it):
+       Task "Copy" skipped, due to false condition; ('$(CopyBuildOutputToOutputDirectory)' == 'true' and '$(SkipCopyBuildProduct)' != 'true') was evaluated as ('true' == 'true' and 'true' != 'true').
+       Task "Message" skipped, due to false condition; ('$(CopyBuildOutputToOutputDirectory)' == 'true' and '$(SkipCopyBuildProduct)'!='true') was evaluated as ('true' == 'true' and 'true'!='true').
+       Task "Copy" skipped, due to false condition; ('@(AddModules)' != '') was evaluated as ('' != '').
+       Task "Copy" skipped, due to false condition; ('$(_SGenDllCreated)'=='true') was evaluated as ('false'=='true').
+       Task "Copy" skipped, due to false condition; ('$(_DebugSymbolsProduced)'=='true' and '$(SkipCopyingSymbolsToOutputDirectory)' != 'true' and '$(CopyOutputSymbolsToOutputDirectory)'=='true') was evaluated as ('false'=='true' and '' != 'true' and 'true'=='true').
+       Task "Copy" skipped, due to false condition; ('$(_DocumentationFileProduced)'=='true') was evaluated as ('false'=='true').
+       Task "Copy" skipped, due to false condition; ('@(IntermediateSatelliteAssembliesWithTargetPath)' != '') was evaluated as ('' != '').
+       Task "Copy" skipped, due to false condition; ('@(ReferenceComWrappersToCopyLocal)' != '' or '@(ResolvedIsolatedComModules)' != '' or '@(_DeploymentLooseManifestFile)' != '' or '@(NativeReferenceFile)' != '' ) was evaluated as ('' != '' or '' != '' or '' != '' or '' != '' ).
+       Task "Copy" skipped, due to false condition; ('$(SkipCopyWinMDArtifact)' != 'true' and '@(WinMDExpArtifacts)' != '') was evaluated as ('' != 'true' and '' != '').
+       Task "Message" skipped, due to false condition; ('$(SkipCopyWinMDArtifact)' != 'true' and '$(_WindowsMetadataOutputPath)' != '') was evaluated as ('' != 'true' and '' != '').
+     1>Done building target "CopyFilesToOutputDirectory" in project "libpng.vcxproj".
+     1>Target "PrepareForRun" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "_BuildLinkAction" depends on it):
+     1>Done building target "PrepareForRun" in project "libpng.vcxproj".
+       Target "CustomBuildStep" skipped, due to false condition; ('@(CustomBuildStep)' != '' and '$(SelectedFiles)'=='') was evaluated as ('' != '' and ''=='').
+     1>Target "PostBuildEvent" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "_BuildLinkAction" depends on it):
+       Task "Message" skipped, due to false condition; ('%(PostBuildEvent.Message)' != '' and '%(PostBuildEvent.Command)' != '') was evaluated as ('' != '' and '' != '').
+       Task "Exec" skipped, due to false condition; ('%(PostBuildEvent.Command)' != '') was evaluated as ('' != '').
+     1>Done building target "PostBuildEvent" in project "libpng.vcxproj".
+     1>Target "_BuildLinkAction" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "BuildLink" depends on it):
+     1>Done building target "_BuildLinkAction" in project "libpng.vcxproj".
+     1>Target "BuildLink" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "Build" depends on it):
+     1>Done building target "BuildLink" in project "libpng.vcxproj".
+       Target "CreateTfsBuildInfoResource" skipped, due to false condition; ( $(AddBuildInfoToAssembly)==true ) was evaluated as ( false==true ).
+     1>Target "AfterBuild" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.BuildSteps.Targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "Build" depends on it):
+     1>Done building target "AfterBuild" in project "libpng.vcxproj".
+     1>Target "FinalizeBuildStatus" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (target "Build" depends on it):
+       Task "Delete"
+         Deleting file "Release Library\libpng.tlog\unsuccessfulbuild".
+       Done executing task "Delete".
+       Task "Touch"
+         Touching "Release Library\libpng.tlog\libpng.lastbuildstate".
+       Done executing task "Touch".
+     1>Done building target "FinalizeBuildStatus" in project "libpng.vcxproj".
+     1>Target "Build" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.BuildSteps.Targets" from project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (entry point):
+     1>Done building target "Build" in project "libpng.vcxproj".
+     1>Done Building Project "C:\GitHub\scenarios-vs\Library\source\libpng-master\projects\vstudio2015\libpng\libpng.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:08.68
