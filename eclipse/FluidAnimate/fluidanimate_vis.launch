@@ -2,7 +2,7 @@
 <launchConfiguration type="org.eclipse.cdt.launch.applicationLaunchType">
 <intAttribute key="org.eclipse.cdt.launch.ATTR_BUILD_BEFORE_LAUNCH_ATTR" value="2"/>
 <stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_START_MODE" value="run"/>
-<stringAttribute key="org.eclipse.cdt.launch.PROGRAM_ARGUMENTS" value="1 1 inputs/in_5k.fluid output"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROGRAM_ARGUMENTS" value="1 1 inputs/in_5K.fluid output"/>
 <stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="fluidanimate_vis"/>
 <stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="FluidAnimate"/>
 <booleanAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_AUTO_ATTR" value="false"/>
