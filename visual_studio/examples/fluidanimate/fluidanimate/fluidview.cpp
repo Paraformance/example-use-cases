@@ -15,7 +15,7 @@
 #include "fluid.hpp"
 #include "fluidview.hpp"
 
-
+//#define ENABLE_VISUALIZATION 1
 
 float rotX = 0.f;
 float rotY = 0.f;
@@ -35,7 +35,6 @@ int *_numCells;
 Cell **_cells;
 int **_cnumPars;
 
-// #define ENABLE_VISUALIZATION 1
 
 #ifdef ENABLE_VISUALIZATION
 extern Vec3 vMin;

@@ -477,50 +477,55 @@ void ComputeForces()
   int neighCells[3*3*3];
 
   int cindex = 0;
-  for(int ck = 0; ck < nz; ++ck)
-    for(int cj = 0; cj < ny; ++cj)
-      for(int ci = 0; ci < nx; ++ci, ++cindex)
-      {
-        int np = cnumPars[cindex];
-        if(np == 0)
-          continue;
+  for (int ck = 0; ck < nz; ++ck)
+  {
+	  for (int cj = 0; cj < ny; ++cj)
+	  {
+		  for (int ci = 0; ci < nx; ++ci, ++cindex)
+		  {
+			  int np = cnumPars[cindex];
+			  if (np == 0)
+				  continue;
 
-        int numNeighCells = GetNeighborCells(ci, cj, ck, neighCells);
+			  int neighCells[3 * 3 * 3];
+			  int numNeighCells = GetNeighborCells(ci, cj, ck, neighCells);
 
-        Cell *cell = &cells[cindex];
-        for(int ipar = 0; ipar < np; ++ipar)
-        {
-          for(int inc = 0; inc < numNeighCells; ++inc)
-          {
-            int cindexNeigh = neighCells[inc];
-            Cell *neigh = &cells[cindexNeigh];
-            int numNeighPars = cnumPars[cindexNeigh];
-            for(int iparNeigh = 0; iparNeigh < numNeighPars; ++iparNeigh)
-            {
-              //Check address to make sure densities are computed only once per pair
-              if(&neigh->p[iparNeigh % PARTICLES_PER_CELL] < &cell->p[ipar % PARTICLES_PER_CELL])
-              {
-                fptype distSq = (cell->p[ipar % PARTICLES_PER_CELL] - neigh->p[iparNeigh % PARTICLES_PER_CELL]).GetLengthSq();
-                if(distSq < hSq)
-                {
-                  fptype t = hSq - distSq;
-                  fptype tc = t*t*t;
-                  cell->density[ipar % PARTICLES_PER_CELL] += tc;
-                  neigh->density[iparNeigh % PARTICLES_PER_CELL] += tc;
-                }
-              }
-              //move pointer to next cell in list if end of array is reached
-              if(iparNeigh % PARTICLES_PER_CELL == PARTICLES_PER_CELL-1) {
-                neigh = neigh->next;
-              }
-            }
-          }
-          //move pointer to next cell in list if end of array is reached
-          if(ipar % PARTICLES_PER_CELL == PARTICLES_PER_CELL-1) {
-            cell = cell->next;
-          }
-        }
-      }
+			  Cell *cell = &cells[cindex];
+			  for (int ipar = 0; ipar < np; ++ipar)
+			  {
+				  for (int inc = 0; inc < numNeighCells; ++inc)
+				  {
+					  int cindexNeigh = neighCells[inc];
+					  Cell *neigh = &cells[cindexNeigh];
+					  int numNeighPars = cnumPars[cindexNeigh];
+					  for (int iparNeigh = 0; iparNeigh < numNeighPars; ++iparNeigh)
+					  {
+						  //Check address to make sure densities are computed only once per pair
+						  if (&neigh->p[iparNeigh % PARTICLES_PER_CELL] < &cell->p[ipar % PARTICLES_PER_CELL])
+						  {
+							  fptype distSq = (cell->p[ipar % PARTICLES_PER_CELL] - neigh->p[iparNeigh % PARTICLES_PER_CELL]).GetLengthSq();
+							  if (distSq < hSq)
+							  {
+								  fptype t = hSq - distSq;
+								  fptype tc = t*t*t;
+								  cell->density[ipar % PARTICLES_PER_CELL] += tc;
+								  neigh->density[iparNeigh % PARTICLES_PER_CELL] += tc;
+							  }
+						  }
+						  //move pointer to next cell in list if end of array is reached
+						  if (iparNeigh % PARTICLES_PER_CELL == PARTICLES_PER_CELL - 1) {
+							  neigh = neigh->next;
+						  }
+					  }
+				  }
+				  //move pointer to next cell in list if end of array is reached
+				  if (ipar % PARTICLES_PER_CELL == PARTICLES_PER_CELL - 1) {
+					  cell = cell->next;
+				  }
+			  }
+		  }
+	  }
+  }
 
   const fptype tc = hSq*hSq*hSq;
   for(int i = 0; i < numCells; ++i)
@@ -539,64 +544,68 @@ void ComputeForces()
   }
 
   cindex = 0;
-  for(int ck = 0; ck < nz; ++ck)
-    for(int cj = 0; cj < ny; ++cj)
-      for(int ci = 0; ci < nx; ++ci, ++cindex)
-      {
-        int np = cnumPars[cindex];
-        if(np == 0)
-          continue;
+  for (int ck = 0; ck < nz; ++ck)
+  {
+	  for (int cj = 0; cj < ny; ++cj)
+	  {
+		  for (int ci = 0; ci < nx; ++ci, ++cindex)
+		  {
+			  int np = cnumPars[cindex];
+			  if (np == 0)
+				  continue;
 
-        int numNeighCells = GetNeighborCells(ci, cj, ck, neighCells);
+			  int numNeighCells = GetNeighborCells(ci, cj, ck, neighCells);
 
-        Cell *cell = &cells[cindex];
-        for(int ipar = 0; ipar < np; ++ipar)
-        {
-          for(int inc = 0; inc < numNeighCells; ++inc)
-          {
-            int cindexNeigh = neighCells[inc];
-            Cell *neigh = &cells[cindexNeigh];
-            int numNeighPars = cnumPars[cindexNeigh];
-            for(int iparNeigh = 0; iparNeigh < numNeighPars; ++iparNeigh)
-            {
-              //Check address to make sure forces are computed only once per pair
-              if(&neigh->p[iparNeigh % PARTICLES_PER_CELL] < &cell->p[ipar % PARTICLES_PER_CELL])
-              {
-                Vec3 disp = cell->p[ipar % PARTICLES_PER_CELL] - neigh->p[iparNeigh % PARTICLES_PER_CELL];
-                fptype distSq = disp.GetLengthSq();
-                if(distSq < hSq)
-                {
+			  Cell *cell = &cells[cindex];
+			  for (int ipar = 0; ipar < np; ++ipar)
+			  {
+				  for (int inc = 0; inc < numNeighCells; ++inc)
+				  {
+					  int cindexNeigh = neighCells[inc];
+					  Cell *neigh = &cells[cindexNeigh];
+					  int numNeighPars = cnumPars[cindexNeigh];
+					  for (int iparNeigh = 0; iparNeigh < numNeighPars; ++iparNeigh)
+					  {
+						  //Check address to make sure forces are computed only once per pair
+						  if (&neigh->p[iparNeigh % PARTICLES_PER_CELL] < &cell->p[ipar % PARTICLES_PER_CELL])
+						  {
+							  Vec3 disp = cell->p[ipar % PARTICLES_PER_CELL] - neigh->p[iparNeigh % PARTICLES_PER_CELL];
+							  fptype distSq = disp.GetLengthSq();
+							  if (distSq < hSq)
+							  {
 #ifndef ENABLE_DOUBLE_PRECISION
 #ifdef _WIN32
-                  fptype dist = sqrtf(__max(distSq, (fptype)1e-12));
+								  fptype dist = sqrtf(__max(distSq, (fptype)1e-12));
 #else
-			      fptype dist = sqrtf(std::max(distSq, (fptype)1e-12));
+								  fptype dist = sqrtf(std::max(distSq, (fptype)1e-12));
 #endif
 #else
-                  fptype dist = sqrt(std::max(distSq, 1e-12));
+								  fptype dist = sqrt(std::max(distSq, 1e-12));
 #endif //ENABLE_DOUBLE_PRECISION
-                  fptype hmr = h - dist;
+								  fptype hmr = h - dist;
 
-                  Vec3 acc = disp * pressureCoeff * (hmr*hmr/dist) * (cell->density[ipar % PARTICLES_PER_CELL]+neigh->density[iparNeigh % PARTICLES_PER_CELL] - doubleRestDensity);
-                  acc += (neigh->v[iparNeigh % PARTICLES_PER_CELL] - cell->v[ipar % PARTICLES_PER_CELL]) * viscosityCoeff * hmr;
-                  acc /= cell->density[ipar % PARTICLES_PER_CELL] * neigh->density[iparNeigh % PARTICLES_PER_CELL];
+								  Vec3 acc = disp * pressureCoeff * (hmr*hmr / dist) * (cell->density[ipar % PARTICLES_PER_CELL] + neigh->density[iparNeigh % PARTICLES_PER_CELL] - doubleRestDensity);
+								  acc += (neigh->v[iparNeigh % PARTICLES_PER_CELL] - cell->v[ipar % PARTICLES_PER_CELL]) * viscosityCoeff * hmr;
+								  acc /= cell->density[ipar % PARTICLES_PER_CELL] * neigh->density[iparNeigh % PARTICLES_PER_CELL];
 
-                  cell->a[ipar % PARTICLES_PER_CELL] += acc;
-                  neigh->a[iparNeigh % PARTICLES_PER_CELL] -= acc;
-                }
-              }
-              //move pointer to next cell in list if end of array is reached
-              if(iparNeigh % PARTICLES_PER_CELL == PARTICLES_PER_CELL-1) {
-                neigh = neigh->next;
-              }
-            }
-          }
-          //move pointer to next cell in list if end of array is reached
-          if(ipar % PARTICLES_PER_CELL == PARTICLES_PER_CELL-1) {
-            cell = cell->next;
-          }
-        }
-      }
+								  cell->a[ipar % PARTICLES_PER_CELL] += acc;
+								  neigh->a[iparNeigh % PARTICLES_PER_CELL] -= acc;
+							  }
+						  }
+						  //move pointer to next cell in list if end of array is reached
+						  if (iparNeigh % PARTICLES_PER_CELL == PARTICLES_PER_CELL - 1) {
+							  neigh = neigh->next;
+						  }
+					  }
+				  }
+				  //move pointer to next cell in list if end of array is reached
+				  if (ipar % PARTICLES_PER_CELL == PARTICLES_PER_CELL - 1) {
+					  cell = cell->next;
+				  }
+			  }
+		  }
+	  }
+  }
 }
 
 ////////////////////////////////////////////////////////////////////////////////
