@@ -17,10 +17,10 @@ endif
 all: fluidanimate_no_vis fluidanimate_vis
 
 fluidanimate_no_vis: serial.cpp cellpool.cpp fluid.hpp cellpool.hpp
-	$(CXX) $(CXXFLAGS) $(PARRFLAGS) -o fluidanimate_no_vis serial.cpp cellpool.cpp
+	$(CXX) $(CXXFLAGS) -o fluidanimate_no_vis serial.cpp cellpool.cpp $(PARRFLAGS)
 
 fluidanimate_vis: fluidview.cpp cellpool.cpp serial.cpp fluid.hpp cellpool.hpp fluidview.hpp
-	$(CXX) $(CXXFLAGS) $(VISFLAGS) -o fluidanimate_vis -DENABLE_VISUALIZATION serial.cpp cellpool.cpp fluidview.cpp
+	$(CXX) $(CXXFLAGS) -o fluidanimate_vis -DENABLE_VISUALIZATION serial.cpp cellpool.cpp fluidview.cpp $(VISFLAGS)
 
 clean:
 	$(RM) *.o fluidanimate_no_vis fluidanimate_vis
