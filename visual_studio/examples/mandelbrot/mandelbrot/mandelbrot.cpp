@@ -42,7 +42,8 @@ void get_number_iterations(window<int> &scr, window<double> &fract, int iter_max
 		for (int j = scr.x_min(); j < scr.x_max(); ++j) {
 			Complex c((double)(j), (double)(i));
 			c = scale(scr, fract, c);
-			colors[k] = escape(c, iter_max, func);  // Replace with Ni+j
+			// Replace with Ni+j
+			colors[k] = escape(c, iter_max, func);
 			k += 1;
 		}
 	}
