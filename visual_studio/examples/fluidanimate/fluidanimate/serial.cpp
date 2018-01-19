@@ -16,6 +16,7 @@
 #include "fluid.hpp"
 #include "cellpool.hpp"
 
+#define NOMINMAX
 // #define ENABLE_VISUALIZATION 1
 
 #ifdef ENABLE_VISUALIZATION
