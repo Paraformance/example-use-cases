@@ -17,10 +17,11 @@
 #include "cellpool.hpp"
 
 #define NOMINMAX
-// #define ENABLE_VISUALIZATION 1
+#include <algorithm>
+
+//#define ENABLE_VISUALIZATION
 
 #ifdef ENABLE_VISUALIZATION
-#include <algorithm>
 #include "fluidview.hpp"
 #endif
 
@@ -574,15 +575,7 @@ void ComputeForces()
 							  fptype distSq = disp.GetLengthSq();
 							  if (distSq < hSq)
 							  {
-#ifndef ENABLE_DOUBLE_PRECISION
-#ifdef _WIN32
-								  fptype dist = sqrtf(__max(distSq, (fptype)1e-12));
-#else
 								  fptype dist = sqrtf(std::max(distSq, (fptype)1e-12));
-#endif
-#else
-								  fptype dist = sqrt(std::max(distSq, 1e-12));
-#endif //ENABLE_DOUBLE_PRECISION
 								  fptype hmr = h - dist;
 
 								  Vec3 acc = disp * pressureCoeff * (hmr*hmr / dist) * (cell->density[ipar % PARTICLES_PER_CELL] + neigh->density[iparNeigh % PARTICLES_PER_CELL] - doubleRestDensity);

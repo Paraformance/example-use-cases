@@ -15,7 +15,7 @@
 #include "fluid.hpp"
 #include "fluidview.hpp"
 
-//#define ENABLE_VISUALIZATION 1
+//#define ENABLE_VISUALIZATION
 
 float rotX = 0.f;
 float rotY = 0.f;

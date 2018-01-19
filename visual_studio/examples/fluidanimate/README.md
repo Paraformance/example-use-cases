@@ -45,3 +45,10 @@ the application must be compiled with at least C++11 (`-std=c++11` or
 ### Dependences
 1. OpenGL
 2. GLUT
+
+### Running the code
+1. Just build and run.
+2. To enable visulation, uncomment ENABLE_VISUALIZATION in fluidview.cpp and serial.cpp files.
+
+### NOTE:
+1. Paraformance discovery code does not work with user interseption, i.e. discovering parallelism won't work with visualisation.
